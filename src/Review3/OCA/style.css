@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+
+a
+{
+	text-decoration:none;
+	color:cyan;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:14px;
+
+}
+a:hover
+{
+	color:orange;
+
+
+}
+
+.line
+{
+	border:thick;
+
+}
+
+
+
+.button
+{
+	width:auto;
+	height:28px;	
+	text-align:center;
+	color:#CCC;
+	background-color:#666;
+	font:"Arial Black", Gadget, sans-serif;
+	font-size:14px;
+	border:hidden;
+}
+.sub
+{
+	width:auto;
+	height:28px;	
+	text-align:center;
+	color:#CCC;
+	background-color:#666;
+background-image:url("submit.jpg");
+	font:"Arial Black", Gadget, sans-serif;
+	font-size:14px;
+	border:hidden;
+}
+
+
+.button:hover
+{
+	color:#FFF;
+	border-color:#333;
+	border:thick;
+
+}
+
+label
+{
+	font:"Lucida Console", Monaco, monospace;
+	font-size:18px;
+	color:#090;
+	text-shadow:#030;
+
+
+}
+
+
+
+
+
+
+
+
+

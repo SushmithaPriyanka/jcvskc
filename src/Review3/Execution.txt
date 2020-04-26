@@ -1,0 +1,101 @@
+			     ---------
+			    |EXECUTION|
+			     ---------
+
+   (1)-------------------------------------------------------------------
+
+     -----------------
+      |install softwares|
+     -----------------
+
+    java 1.5/1.4
+
+    tomcat 5.5/5.0 --default port number-->8080(any 4 digit number)
+
+     oracle 9i
+
+
+    (2)-------------------------------------------------------------------
+ 
+     ------------
+     |PATH setting|
+     ------------
+
+      -->Right click on my computer-->Advanced-->Environment Variables-->
+            system variables->click 'NEW' and add the varible name and values 
+
+   variable name   - path
+   variable value  - D:\j2sdk1.4.2_04\bin;
+                  D:\oracle\ora92\bin----ok
+
+
+   variable name   - classpath
+   variable value  - D:\j2sdk1.4.2_04\jre\lib\rt.jar;
+                  D:\j2sdk1.4.2_04\lib\tools.jar;
+                  D:\Tomcat 5.5\common\lib\servlet-api.jar;
+
+
+   variable name   - JAVA_HOME
+   variable value  - D:\j2sdk1.4.2_04
+
+
+   variable name   - CATALINA_HOME
+   varrable value  - D:\Tomcat 5.5
+
+
+    (3)-------------------------------------------------------------------
+
+      ------------------
+     |Project Deployment|
+       ------------------
+
+      please paste your project in below path
+
+     -->tomcat5.5\webapps\.....[your appliction(project)]
+
+
+          (4)-------------------------------------------------------------------
+
+         ------------------------------
+        |Creation of new user in oracle|
+       ------------------------------
+
+       cmd1: create user username identified by password;
+		  -------- 		 --------
+
+       cmd2: grant resource,connect to username; Exit
+				--------
+
+      please paste your tables in newly created ORACLE account.
+
+
+       (5)-------------------------------------------------------------------
+
+            ------------
+           |DSN Creation|
+            ------------
+
+       -->Start-->settings-->control pannel-->Administrtive tools-->    datasources(ODBC)-->system DSN-->add-->microsoft ODBC for oracle-->
+       finish-->OK
+
+
+       (6)-------------------------------------------------------------------
+
+         ------------
+         |start tomcat|
+         ------------
+
+         -->tomcat5.5\bin\tomcat5.exe(double click)
+
+
+         (7)-------------------------------------------------------------------
+
+         ---------
+        |Execution|
+         ---------
+
+         1.open Browser(internetexplorer)
+
+         2.http://localhost:8080/projectname(which is stored in web apps)
+
+         ----------------------------------------------------------------------
